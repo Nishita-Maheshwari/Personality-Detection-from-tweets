@@ -59,7 +59,14 @@ Methodology of sentimental analysis in twitter mainly involves 5 steps.
 
 5.	Classification.
 
-# Technology
+# Software Required
+ 
+Software: Jupyter Notebook
+
+Hardware: Using 4GB RAM
+
+# Testing technologies to be used
+
 •	The techniques which we used:
 
    1.	Sentiment analysis:-Sentiment Analysis is the most common text classification tool that analyses an incoming message and tells           whether the underlying sentiment is positive, negative our neutral.
@@ -69,14 +76,6 @@ Methodology of sentimental analysis in twitter mainly involves 5 steps.
    3.	Machine learning:-Machine learning is an application of artificial intelligence (AI) that provides systems the ability to                 automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of       computer programs that can access data and use it learn for themselves.
    
    4.	Supervised learning methods: - Supervised learning provides you with a powerful tool to classify and process data using machine           language. With supervised learning you use labeled data, which is a data set that has been classified, to infer a learning               algorithm. The data set is used as the basis for predicting the classification of other unlabeled data through the use of machine         learning algorithms.
-
-
-# Software Required
- 
-Software: Jupyter Notebook
-
-Hardware: Using 4GB RAM
-
 
 # Conclusion:
 
