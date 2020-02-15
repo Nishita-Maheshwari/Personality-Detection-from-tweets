@@ -65,7 +65,7 @@ Software: Jupyter Notebook
 
 Hardware: Using 4GB RAM
 
-# Testing technologies to be used
+# Technologies to be used
 
 •	The techniques which we used:
 
