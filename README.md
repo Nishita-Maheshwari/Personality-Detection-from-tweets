@@ -77,8 +77,6 @@ Software: Jupyter Notebook
 
 Hardware: Using 4GB RAM
 
-Technology: Machine Learning with Python
-
 
 # Conclusion:
 
