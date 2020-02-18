@@ -61,9 +61,9 @@ Methodology of sentimental analysis in twitter mainly involves 5 steps.
 
 # Software Required
  
-Software: Jupyter Notebook
+Software: Spyder(Anaconda3)
 
-Hardware: Using 4GB RAM
+Hardware: Using 8GB RAM
 
 # Technologies to be used
 
