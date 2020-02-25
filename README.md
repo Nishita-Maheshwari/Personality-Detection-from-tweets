@@ -75,6 +75,12 @@ There are some general library requirements for the project and some which are s
 
 3. scipy
 
+4. TextBlob
+
+5. Tweety
+
+6. matplotlib.pyplot
+
 
 # Conclusion:
 
