@@ -20,3 +20,5 @@ class SentimentAnalysis:
         accessToken = '977420215700074496-EWusxwITCswztoob0qCDa6ZN7ffHHrQ'
         accessTokenSecret = 'cM0vmj0Xv2ScLJdDoxAjHSObwToWZBbSgzw9gGWPIf4wb'
         auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
+        auth.set_access_token(accessToken, accessTokenSecret)
+        api = tweepy.API(auth)
