@@ -13,4 +13,7 @@ class SentimentAnalysis:
         self.tweets = []
         self.tweetText = []
 
-
+    def DownloadData(self):
+        # authenticating
+        consumerKey = '8XjsAxfTrb5pYN3CQYjZaeHKo'
+        consumerSecret = 'tZBko2hoVZ4RBVOrvUDqQBUlGAEgsnQDJ9reeapddedxhPvtjy'
