@@ -31,3 +31,13 @@ class SentimentAnalysis:
         csvFile = open('result.csv', 'a')
 
         csvWriter = csv.writer(csvFile)
+
+        polarity = 0
+        neuroticsm = 0
+        extraversion = 0
+        openness = 0
+        conscientiousness = 0
+        agreeableness = 0
+        sickiness = 0
+        nervousness = 0
+
