@@ -28,3 +28,5 @@ class SentimentAnalysis:
 
         self.tweets = tweepy.Cursor(api.search, q=searchTerm, lang = "en").items(NoOfTerms)
 
+        csvFile = open('result.csv', 'a')
+
