@@ -30,3 +30,4 @@ class SentimentAnalysis:
 
         csvFile = open('result.csv', 'a')
 
+        csvWriter = csv.writer(csvFile)
