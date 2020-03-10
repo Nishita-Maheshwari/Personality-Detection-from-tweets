@@ -23,5 +23,8 @@ class SentimentAnalysis:
         auth.set_access_token(accessToken, accessTokenSecret)
         api = tweepy.API(auth)
 
-        searchTerm = input("Enter Keyword/Tag to search about: ")
+        earchTerm = input("Enter Keyword/Tag to search about: ")
         NoOfTerms = int(input("Enter how many tweets to search: "))
+
+        self.tweets = tweepy.Cursor(api.search, q=searchTerm, lang = "en").items(NoOfTerms)
+
