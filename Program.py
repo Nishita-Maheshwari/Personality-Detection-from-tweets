@@ -41,3 +41,7 @@ class SentimentAnalysis:
         sickiness = 0
         nervousness = 0
 
+        for tweet in self.tweets:
+
+
+
