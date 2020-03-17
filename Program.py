@@ -42,6 +42,8 @@ class SentimentAnalysis:
         nervousness = 0
 
         for tweet in self.tweets:
+            self.tweetText.append(self.cleanTweet(tweet.text).encode('utf-8'))
+
 
 
 
