@@ -43,6 +43,7 @@ class SentimentAnalysis:
 
         for tweet in self.tweets:
             self.tweetText.append(self.cleanTweet(tweet.text).encode('utf-8'))
+            analysis = TextBlob(tweet.text)
 
 
 
