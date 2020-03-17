@@ -46,6 +46,22 @@ class SentimentAnalysis:
             analysis = TextBlob(tweet.text)
             polarity += analysis.sentiment.polarity
 
+            if (analysis.sentiment.polarity == 0):
+                nervousness += 1
+            elif (analysis.sentiment.polarity > 0 and analysis.sentiment.polarity <= 0.3):
+                extraversion += 1
+            elif (analysis.sentiment.polarity > 0.3 and analysis.sentiment.polarity <= 0.6):
+                neuroticsm += 1
+            elif (analysis.sentiment.polarity > 0.6 and analysis.sentiment.polarity <= 1):
+                openness += 1
+            elif (analysis.sentiment.polarity > -0.3 and analysis.sentiment.polarity <= 0):
+                agreeableness += 1
+            elif (analysis.sentiment.polarity > -0.6 and analysis.sentiment.polarity <= -0.3):
+                conscientiousness += 1
+            elif (analysis.sentiment.polarity > -1 and analysis.sentiment.polarity <= -0.6):
+                sickiness += 1
+
+
 
 
 
