@@ -60,6 +60,8 @@ class SentimentAnalysis:
                 conscientiousness += 1
             elif (analysis.sentiment.polarity > -1 and analysis.sentiment.polarity <= -0.6):
                 sickiness += 1
+        csvWriter.writerow(self.tweetText)
+        csvFile.close()
 
 
 
