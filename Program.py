@@ -73,6 +73,34 @@ class SentimentAnalysis:
 
         polarity = polarity / NoOfTerms
 
+        print("How people are reacting on " + searchTerm + " by analyzing " + str(NoOfTerms) + " tweets.")
+        print()
+        print("General Report: ")
+        if (polarity == 0):
+            print("nervousness")
+        elif (polarity > 0 and polarity <= 0.3):
+            print("extraversion")
+        elif (polarity > 0.3 and polarity <= 0.6):
+            print("neuroticsm ")
+        elif (polarity > 0.6 and polarity <= 1):
+            print(" openness")
+        elif (polarity > -0.3 and polarity <= 0):
+            print("agreeableness")
+        elif (polarity > -0.6 and polarity <= -0.3):
+            print("conscientiousness")
+        elif (polarity > -1 and polarity <= -0.6):
+            print("sickiness")
+
+        print()
+        print("Detailed Report: ")
+        print(str(neuroticsm) + "% people thought it was neuroticsm ")
+        print(str(extraversion) + "% people thought it was extraversion")
+        print(str(openness) + "% people thought it was  openness")
+        print(str(conscientiousness) + "% people thought it was conscientiousness")
+        print(str(agreeableness) + "% people thought it was agreeableness")
+        print(str(sickiness) + "% people thought it was sickiness")
+        print(str(nervousness) + "% people thought it was nervousness")
+
 
 
 
