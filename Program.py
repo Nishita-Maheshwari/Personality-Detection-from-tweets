@@ -71,6 +71,8 @@ class SentimentAnalysis:
         sickiness = self.percentage(sickiness, NoOfTerms)
         nervousness = self.percentage(nervousness, NoOfTerms)
 
+        polarity = polarity / NoOfTerms
+
 
 
 
