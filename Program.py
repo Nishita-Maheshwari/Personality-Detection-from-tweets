@@ -63,6 +63,15 @@ class SentimentAnalysis:
         csvWriter.writerow(self.tweetText)
         csvFile.close()
 
+        neuroticsm = self.percentage(neuroticsm, NoOfTerms)
+        extraversion = self.percentage(extraversion, NoOfTerms)
+        openness = self.percentage(openness, NoOfTerms)
+        conscientiousness = self.percentage(conscientiousness, NoOfTerms)
+        agreeableness = self.percentage(agreeableness, NoOfTerms)
+        sickiness = self.percentage(sickiness, NoOfTerms)
+        nervousness = self.percentage(nervousness, NoOfTerms)
+
+
 
 
 
