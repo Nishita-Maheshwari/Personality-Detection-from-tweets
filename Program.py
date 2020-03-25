@@ -101,6 +101,12 @@ class SentimentAnalysis:
         print(str(sickiness) + "% people thought it was sickiness")
         print(str(nervousness) + "% people thought it was nervousness")
 
+        self.plotPieChart(neuroticsm, extraversion, openness, conscientiousness, agreeableness, sickiness, nervousness,
+                          searchTerm, NoOfTerms)
+
+    def cleanTweet(self, tweet):
+
+
 
 
 
