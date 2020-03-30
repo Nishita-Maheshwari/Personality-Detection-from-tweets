@@ -127,10 +127,10 @@ class SentimentAnalysis:
         plt.show()
 
 
-
 if __name__== "__main__":
     sa = SentimentAnalysis()
     sa.DownloadData()
+
 
 
 
