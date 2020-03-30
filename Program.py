@@ -107,6 +107,24 @@ class SentimentAnalysis:
     def cleanTweet(self, tweet):
         return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]) | (\w +:\ / \ / \S +)", " ", tweet).split())
 
+    def percentage(self, part, whole):
+        temp = 100 * float(part) / float(whole)
+        return format(temp,'.2f')
+
+    def plotPieChart(self, neuroticsm, extraversion, openness, conscientiousness, agreeableness, sickiness, nervousness,
+                     searchTerm, noOfSearchTerms):
+        labels = ['neuroticsm  [' + str(neuroticsm) + '%]', 'extraversion [' + str(extraversion) + '%]',
+                  ' openness [' + str(neuroticsm) + '%]', 'nervousness [' + str(nervousness) + '%]',
+                  'conscientiousness [' + str(conscientiousness) + '%]', 'agreeableness [' + str(agreeableness) + '%]',
+                  'sickiness [' + str(sickiness) + '%]']
+        sizes = [neuroticsm, extraversion, openness, nervousness, conscientiousness, agreeableness, sickiness]
+        colors = ['yellowgreen', 'lightgreen', 'darkgreen', 'gold', 'red', 'lightsalmon', 'darkred']
+        patches, texts = plt.pie(sizes, colors=colors, startangle=90)
+        plt.legend(patches, labels, loc="best")
+        plt.title('How people are reacting on ' + searchTerm + ' by analyzing ' + str(noOfSearchTerms) + ' Tweets.')
+        plt.axis('equal')
+        plt.tight_layout()
+        plt.show()
 
 
 
